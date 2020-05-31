@@ -1,0 +1,11 @@
+﻿*.suo
+*.snk
+/.vs
+*/bin
+*/obj
+*.exe
+*.log
+*.pdb
+*.db
+*.swp
+*.DotSettings.user
