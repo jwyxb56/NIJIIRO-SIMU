@@ -1,0 +1,43 @@
+{
+  "title": "シャルル",
+  "subtitle": "",
+  "artist": [
+    "バルーン feat.flower"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "シャルル.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 145,
+  "offset": 0.977,
+  "songpreview": 53.15,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "OVER THE TOP",
+  "subtitle": "",
+  "artist": [
+    "ONE PIECE ワノ国編主題歌"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "OVER THE TOP.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 106,
+  "offset": 1.245,
+  "songpreview": 33.5,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 2,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 2,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

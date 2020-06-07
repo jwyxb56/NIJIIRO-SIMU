@@ -1,0 +1,43 @@
+{
+  "title": "第九交響曲",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "第九交響曲.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 172,
+  "offset": 0.58,
+  "songpreview": 61.5,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 4,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

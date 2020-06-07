@@ -12,7 +12,7 @@
     <AssemblyName>TJAPlayer3</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ApplicationIcon>TJAPlayer3.ico</ApplicationIcon>
+    <ApplicationIcon>TOS7.ico</ApplicationIcon>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>
@@ -274,6 +274,7 @@
   <ItemGroup>
     <Content Include="dtx.ico" />
     <Content Include="Resources\TaikoCatsDooooN.ico" />
+    <Content Include="TOS7.ico" />
     <None Include="Resources\tjap3.ico" />
     <None Include="Resources\TJAPlayer3.ico" />
     <Content Include="TaikoCatsDooooN.ico" />

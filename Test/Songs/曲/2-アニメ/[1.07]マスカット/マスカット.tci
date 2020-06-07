@@ -1,0 +1,43 @@
+{
+  "title": "マスカット",
+  "subtitle": "",
+  "artist": [
+    "「クレヨンしんちゃん」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "マスカット.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 170,
+  "offset": 2,
+  "songpreview": 26.36,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 2,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 1,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 1,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

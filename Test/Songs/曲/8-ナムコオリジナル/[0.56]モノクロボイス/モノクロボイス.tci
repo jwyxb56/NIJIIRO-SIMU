@@ -1,0 +1,49 @@
+{
+  "title": "モノクロボイス",
+  "subtitle": "",
+  "artist": [
+    "cosMo@暴走P feat.初音ミク・GUMI"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "モノクロボイス.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 240,
+  "offset": 1.14,
+  "songpreview": 45.65,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 10,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 10,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 6,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

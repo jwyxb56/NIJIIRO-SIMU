@@ -1,0 +1,49 @@
+{
+  "title": "Heavenly Visitor",
+  "subtitle": "",
+  "artist": [
+    "「アイドリッシュセブン」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Heavenly Visitor.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 188,
+  "offset": -0,
+  "songpreview": 61.84,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 9,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 3,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 3,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

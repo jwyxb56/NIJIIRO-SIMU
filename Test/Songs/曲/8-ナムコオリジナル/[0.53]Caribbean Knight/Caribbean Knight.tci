@@ -1,0 +1,43 @@
+{
+  "title": "Caribbean Knight",
+  "subtitle": "",
+  "artist": [
+    "Taiji"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Caribbean Knight.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 285,
+  "offset": 0.99,
+  "songpreview": 27.15,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 10,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 7,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 5,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

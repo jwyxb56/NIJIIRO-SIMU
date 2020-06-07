@@ -1,0 +1,43 @@
+{
+  "title": "バイオレンストリガー",
+  "subtitle": "",
+  "artist": [
+    "八王子P feat.初音ミク"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "バイオレンストリガー.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 196,
+  "offset": 4.891,
+  "songpreview": 48.981,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

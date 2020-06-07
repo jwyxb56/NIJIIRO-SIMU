@@ -1,0 +1,43 @@
+{
+  "title": "Heat Haze Shadow 2",
+  "subtitle": "",
+  "artist": [
+    "「鉄拳7」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Heat Haze Shadow 2.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 174,
+  "offset": 0.01,
+  "songpreview": 91.2,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 6,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

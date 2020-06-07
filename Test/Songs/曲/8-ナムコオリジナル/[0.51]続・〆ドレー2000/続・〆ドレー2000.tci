@@ -1,0 +1,25 @@
+{
+  "title": "続・〆ドレー2000",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "続・〆ドレー2000.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 220,
+  "offset": 1.949,
+  "songpreview": 1.949,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 10,
+      "single": "Oni.tcc",
+      "multiple": null
+    }
+  ]
+}

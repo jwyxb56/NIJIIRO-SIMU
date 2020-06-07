@@ -1,0 +1,49 @@
+{
+  "title": "やわらか戦車",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "やわらか戦車.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 155.62,
+  "offset": 0.015,
+  "songpreview": 12.75,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 9,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

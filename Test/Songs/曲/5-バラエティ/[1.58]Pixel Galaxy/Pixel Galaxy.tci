@@ -1,0 +1,43 @@
+{
+  "title": "Pixel Galaxy",
+  "subtitle": "",
+  "artist": [
+    "Snail’s House"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Pixel Galaxy.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 300,
+  "offset": -0,
+  "songpreview": 102.4,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

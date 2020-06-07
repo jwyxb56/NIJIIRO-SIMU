@@ -1,0 +1,64 @@
+{
+  "title": "もりのくまさん",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "もりのくまさん.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 120,
+  "offset": 5,
+  "songpreview": 8.25,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 9,
+      "single": "Edit.tcc",
+      "multiple": [
+        "Edit_1P.tcc",
+        "Edit_2P.tcc"
+      ]
+    },
+    {
+      "difficulty": "oni",
+      "level": 1,
+      "single": "Oni.tcc",
+      "multiple": [
+        "Edit_1P.tcc",
+        "Edit_2P.tcc",
+        "Oni_1P.tcc",
+        "Oni_2P.tcc"
+      ]
+    },
+    {
+      "difficulty": "hard",
+      "level": 1,
+      "single": "Hard.tcc",
+      "multiple": [
+        "Edit_1P.tcc",
+        "Edit_2P.tcc",
+        "Oni_1P.tcc",
+        "Oni_2P.tcc",
+        "Hard_1P.tcc",
+        "Hard_2P.tcc"
+      ]
+    },
+    {
+      "difficulty": "normal",
+      "level": 1,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

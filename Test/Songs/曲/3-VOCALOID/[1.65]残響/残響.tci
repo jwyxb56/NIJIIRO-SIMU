@@ -1,0 +1,49 @@
+{
+  "title": "残響",
+  "subtitle": "",
+  "artist": [
+    "164 feat.GUMI 「戦闘摂理解析システム#コンパス」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "残響.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 140,
+  "offset": 4.13,
+  "songpreview": 62.28,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 9,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

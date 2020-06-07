@@ -1,0 +1,43 @@
+{
+  "title": "ロキ",
+  "subtitle": "",
+  "artist": [
+    "みきとP feat. 鏡音リン"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "ロキ.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 150,
+  "offset": 1.63,
+  "songpreview": 52.8,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 4,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 3,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

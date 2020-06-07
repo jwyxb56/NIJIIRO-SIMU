@@ -1,0 +1,43 @@
+{
+  "title": "いぬのおまわりさん",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "いぬのおまわりさん.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 112,
+  "offset": 9,
+  "songpreview": 9,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 4,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 2,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

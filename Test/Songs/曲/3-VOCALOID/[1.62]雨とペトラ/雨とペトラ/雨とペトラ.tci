@@ -1,0 +1,37 @@
+{
+  "title": "雨とペトラ",
+  "subtitle": "",
+  "artist": [
+    "バルーン　feat.flower"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "雨とペトラ.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 195,
+  "offset": 1.27,
+  "songpreview": 62.2,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    }
+  ]
+}

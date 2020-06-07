@@ -1,0 +1,43 @@
+{
+  "title": "カルメン 組曲一番終曲",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "カルメン組曲一番終曲.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 120.26,
+  "offset": -0,
+  "songpreview": 0,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

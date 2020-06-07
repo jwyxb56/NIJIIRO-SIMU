@@ -1,0 +1,43 @@
+{
+  "title": "LOSER",
+  "subtitle": "",
+  "artist": [
+    "米津玄師"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "LOSER.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 121,
+  "offset": 0.01,
+  "songpreview": 51.6,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

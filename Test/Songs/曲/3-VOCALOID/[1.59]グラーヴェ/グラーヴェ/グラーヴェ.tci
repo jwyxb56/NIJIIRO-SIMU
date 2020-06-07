@@ -1,0 +1,43 @@
+{
+  "title": "グラーヴェ",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "グラーヴェ.mp3",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 185,
+  "offset": 1.39,
+  "songpreview": 45.1,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 4,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 2,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

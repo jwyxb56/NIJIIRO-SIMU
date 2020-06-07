@@ -1,0 +1,43 @@
+{
+  "title": "Yes we are",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Yes we are.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 128,
+  "offset": 1.985,
+  "songpreview": 17,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 3,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 1,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

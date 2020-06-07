@@ -1,0 +1,43 @@
+{
+  "title": "アルカリレットウセイ",
+  "subtitle": "",
+  "artist": [
+    "かいりきベア feat.初音ミク 「戦闘摂理解析システム#コンパス」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "アルカリレットウセイ.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 158,
+  "offset": 0.01,
+  "songpreview": 54.69,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

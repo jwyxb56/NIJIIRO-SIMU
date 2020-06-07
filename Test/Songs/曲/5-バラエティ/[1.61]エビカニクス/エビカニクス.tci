@@ -1,0 +1,43 @@
+{
+  "title": "エビカニクス",
+  "subtitle": "",
+  "artist": [
+    "ケロポンズ"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "エビカニクス.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 141,
+  "offset": 0.99,
+  "songpreview": 56.9,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 3,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 2,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

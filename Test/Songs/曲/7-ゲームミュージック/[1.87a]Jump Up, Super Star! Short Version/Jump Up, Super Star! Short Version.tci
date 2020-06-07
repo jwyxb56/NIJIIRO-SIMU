@@ -1,0 +1,43 @@
+{
+  "title": "Jump Up, Super Star! Short Version",
+  "subtitle": "",
+  "artist": [
+    "「スーパーマリオ オデッセイ」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Jump Up, Super Star! Short Version.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 204,
+  "offset": 0.99,
+  "songpreview": 41.28,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "We Will Rock You",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "We Will Rock You.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 162.636,
+  "offset": 3.01,
+  "songpreview": 0,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 5,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 1,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 1,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "天国と地獄 序曲",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "天国と地獄.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 160,
+  "offset": 1.71,
+  "songpreview": 41.5,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 4,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

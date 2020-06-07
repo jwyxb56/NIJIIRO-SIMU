@@ -1,0 +1,49 @@
+{
+  "title": "ハッピーウェディング前ソング",
+  "subtitle": "",
+  "artist": [
+    "ヤバイTシャツ屋さん"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "ハッピーウェディング前ソング.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 183.11,
+  "offset": 0.98,
+  "songpreview": 54.2,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 8,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 2,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

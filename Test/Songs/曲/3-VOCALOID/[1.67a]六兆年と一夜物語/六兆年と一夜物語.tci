@@ -1,0 +1,49 @@
+{
+  "title": "六兆年と一夜物語",
+  "subtitle": "",
+  "artist": [
+    "kemu"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "六兆年と一夜物語.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 186,
+  "offset": 11.33,
+  "songpreview": 53.25,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 9,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

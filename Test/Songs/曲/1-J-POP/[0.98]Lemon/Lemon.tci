@@ -1,0 +1,43 @@
+{
+  "title": "Lemon",
+  "subtitle": "",
+  "artist": [
+    "米津玄師"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Lemon.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 87,
+  "offset": 2.99,
+  "songpreview": 60.2,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 5,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 3,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

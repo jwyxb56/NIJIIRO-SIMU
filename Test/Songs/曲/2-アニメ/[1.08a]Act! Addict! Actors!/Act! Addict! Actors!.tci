@@ -1,0 +1,49 @@
+{
+  "title": "Act! Addict! Actors!",
+  "subtitle": "",
+  "artist": [
+    "アニメ「A3!」より"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Act! Addict! Actors!.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 172,
+  "offset": 2.015,
+  "songpreview": 33.5,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 8,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 5,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 4,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 3,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 2,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

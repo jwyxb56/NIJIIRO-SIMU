@@ -1,0 +1,43 @@
+{
+  "title": "B.B.K.K.B.K.K.",
+  "subtitle": "",
+  "artist": [
+    "nora2r"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "B.B.K.K.B.K.K..ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 170,
+  "offset": 5.98,
+  "songpreview": 34.22,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 6,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

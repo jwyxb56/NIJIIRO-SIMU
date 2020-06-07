@@ -1,0 +1,43 @@
+{
+  "title": "もぺもぺ",
+  "subtitle": "",
+  "artist": [
+    "LeaF"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "もぺもぺ.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 100,
+  "offset": 3,
+  "songpreview": 26.95,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 10,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

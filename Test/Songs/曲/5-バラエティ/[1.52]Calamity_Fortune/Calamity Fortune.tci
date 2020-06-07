@@ -1,0 +1,49 @@
+{
+  "title": "Calamity Fortune",
+  "subtitle": "",
+  "artist": [
+    "東方Projectアレンジ LeaF"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "Calamity Fortune.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 200,
+  "offset": 1.31,
+  "songpreview": 102.08,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "easy",
+      "level": 4,
+      "single": "Easy.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 6,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 10,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "edit",
+      "level": 10,
+      "single": "Edit.tcc",
+      "multiple": null
+    }
+  ]
+}

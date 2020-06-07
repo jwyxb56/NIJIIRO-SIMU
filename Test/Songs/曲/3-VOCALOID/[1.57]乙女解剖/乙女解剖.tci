@@ -1,0 +1,31 @@
+{
+  "title": "乙女解剖",
+  "subtitle": "",
+  "artist": [
+    "DECO*27 feat. 初音ミク"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "乙女解剖.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 134,
+  "offset": 1.343,
+  "songpreview": 68.716,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "edit",
+      "level": 8,
+      "single": "Edit.tcc",
+      "multiple": null
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "馬と鹿",
+  "subtitle": "",
+  "artist": [
+    "米津玄師"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "馬と鹿.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 91,
+  "offset": 0.445,
+  "songpreview": 44.5,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 6,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 3,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 1,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 1,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

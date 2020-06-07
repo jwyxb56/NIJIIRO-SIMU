@@ -1,0 +1,25 @@
+{
+  "title": "PAC‐MAN CHAMPIONSHIP EDITION 2",
+  "subtitle": "",
+  "artist": [
+    "PAC TOY‐BOX"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "PAC-MAN CHAMPIONSHIP EDITION 2.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 150,
+  "offset": 2.11,
+  "songpreview": 54.9,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 9,
+      "single": "Oni.tcc",
+      "multiple": null
+    }
+  ]
+}

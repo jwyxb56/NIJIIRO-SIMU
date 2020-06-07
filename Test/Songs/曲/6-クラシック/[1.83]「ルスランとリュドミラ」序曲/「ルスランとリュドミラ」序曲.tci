@@ -1,0 +1,43 @@
+{
+  "title": "「ルスランとリュドミラ」序曲",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "「ルスランとリュドミラ」序曲.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 161.499,
+  "offset": 0.05,
+  "songpreview": 0,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

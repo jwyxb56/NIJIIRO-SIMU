@@ -1,0 +1,43 @@
+{
+  "title": "道化師の朝の歌",
+  "subtitle": "",
+  "artist": [
+    ""
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "道化師の朝の歌.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 150,
+  "offset": 2.67,
+  "songpreview": 23.1,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "oni",
+      "level": 8,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 7,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 7,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 5,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}

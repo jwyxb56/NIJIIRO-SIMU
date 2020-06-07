@@ -1,0 +1,49 @@
+{
+  "title": "千本桜",
+  "subtitle": "",
+  "artist": [
+    "黒うさP feat.初音ミク"
+  ],
+  "creator": [
+    ""
+  ],
+  "audio": "千本桜.ogg",
+  "background": null,
+  "movieoffset": null,
+  "bpm": 154,
+  "offset": 0.15,
+  "songpreview": 55.8,
+  "albumart": null,
+  "courses": [
+    {
+      "difficulty": "edit",
+      "level": 8,
+      "single": "Edit.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "oni",
+      "level": 7,
+      "single": "Oni.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "hard",
+      "level": 6,
+      "single": "Hard.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "normal",
+      "level": 5,
+      "single": "Normal.tcc",
+      "multiple": null
+    },
+    {
+      "difficulty": "easy",
+      "level": 3,
+      "single": "Easy.tcc",
+      "multiple": null
+    }
+  ]
+}
