@@ -1474,6 +1474,22 @@ for (int i = 0; i < 3; i++) {
 
 						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Playing");
 
+						if (TJAPlayer3.Pad.b押されたDGB(Eパッド.LBlue))
+						{
+							TJAPlayer3.act文字コンソール.tPrint(4, (640 - 24), C文字コンソール.Eフォント種別.白, "LBlue");
+						} 
+						else if (TJAPlayer3.Pad.b押されたDGB(Eパッド.LRed))
+						{
+							TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "LRed");
+						}
+						else if (TJAPlayer3.Pad.b押されたDGB(Eパッド.RRed))
+						{
+							TJAPlayer3.act文字コンソール.tPrint(4, (680 - 24), C文字コンソール.Eフォント種別.白, "RRed");
+						}
+						else if (TJAPlayer3.Pad.b押されたDGB(Eパッド.RBlue))
+						{
+							TJAPlayer3.act文字コンソール.tPrint(4, (700 - 24), C文字コンソール.Eフォント種別.白, "RBlue");
+						}
 						//-----------------------------
 						#endregion
 						break;
