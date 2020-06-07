@@ -202,7 +202,7 @@ namespace TJAPlayer3
 			    if (a == 0)
 				{
 					if (TJAPlayer3.Tx.ConfigBar != null)
-						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 130, 500);
+						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 210, 500);
 					if (TJAPlayer3.Tx.Game != null)
 						TJAPlayer3.Tx.Game.t2D描画(TJAPlayer3.app.Device, 0, 0);
 					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Game");
