@@ -14,6 +14,8 @@ using SlimDX.Direct3D9;
 using FDK;
 using SampleFramework;
 using System.Reflection;
+using System.Web.UI.WebControls;
+using Microsoft.VisualBasic;
 
 namespace TJAPlayer3
 {
@@ -1074,6 +1076,9 @@ namespace TJAPlayer3
 							//-----------------------------
 								#endregion
 						}
+
+						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Song selection");
+
 						//-----------------------------
 						#endregion
 						break;
@@ -1134,6 +1139,7 @@ for (int i = 0; i < 3; i++) {
 
 							this.tガベージコレクションを実行する();
 						}
+						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Song loading");
 						//-----------------------------
 						#endregion
 						break;
@@ -1450,6 +1456,15 @@ for (int i = 0; i < 3; i++) {
 								//-----------------------------
 								#endregion
 						}
+
+						if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.F3))
+						{
+							TJAPlayer3.Skin.オート変更音.t再生する();
+							C共通.bToggleBoolian(ref TJAPlayer3.ConfigIni.b太鼓パートAutoPlay);
+						}
+
+						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Playing");
+
 						//-----------------------------
 						#endregion
 						break;
@@ -1486,6 +1501,9 @@ for (int i = 0; i < 3; i++) {
 								base.Window.Close();
 							}
 						}
+
+						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Result");
+
 						//-----------------------------
 						#endregion
 						break;

@@ -185,11 +185,11 @@ namespace TJAPlayer3
                 // 描画
 
                 if (TJAPlayer3.Tx.Title_Background != null )
-                    TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 );
+                    TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 ); 
 
-                #region[ バージョン表示 ]
-                //string strVersion = "KTT:J:A:I:2017072200";
-                string strCreator = "https://github.com/AioiLight/TJAPlayer3";
+				#region[ バージョン表示 ]
+				//string strVersion = "KTT:J:A:I:2017072200";
+				string strCreator = "https://github.com/AioiLight/TJAPlayer3";
                 AssemblyName asmApp = Assembly.GetExecutingAssembly().GetName();
 #if DEBUG
                 TJAPlayer3.act文字コンソール.tPrint(4, 44, C文字コンソール.Eフォント種別.白, "DEBUG BUILD");
@@ -198,10 +198,12 @@ namespace TJAPlayer3
                 TJAPlayer3.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, "Skin:" + TJAPlayer3.Skin.Skin_Name + " Ver." + TJAPlayer3.Skin.Skin_Version + " (" + TJAPlayer3.Skin.Skin_Creator + ")");
                 //CDTXMania.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, strSubTitle);
                 TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "TJAPlayer3 forked TJAPlayer2 forPC(kairera0467)");
-                #endregion
+				TJAPlayer3.act文字コンソール.tPrint(4, (700 - 24), C文字コンソール.Eフォント種別.白, "TOS i7");
+				TJAPlayer3.act文字コンソール.tPrint(4, (680 - 24), C文字コンソール.Eフォント種別.白, "Title");
+				#endregion
 
-                
-				if( TJAPlayer3.Tx.Title_Menu != null )
+
+				if ( TJAPlayer3.Tx.Title_Menu != null )
 				{
 					int x = MENU_X;
 					int y = MENU_Y + ( this.n現在のカーソル行 * MENU_H );
@@ -378,9 +380,9 @@ namespace TJAPlayer3
 		{
 			if ( this.n現在のカーソル行 != (int) E戻り値.EXIT - 1 )
 			{
-				TJAPlayer3.Skin.soundカーソル移動音.t再生する();
+				TJAPlayer3.Skin.ON.t再生する();
 				this.n現在のカーソル行++;
-				this.ct下移動用.t開始( 0, 100, 1, TJAPlayer3.Timer );
+				this.ct下移動用.t開始( 0, 100, 3, TJAPlayer3.Timer );
 				if( this.ct上移動用.b進行中 )
 				{
 					this.ct下移動用.n現在の値 = 100 - this.ct上移動用.n現在の値;
@@ -392,9 +394,9 @@ namespace TJAPlayer3
 		{
 			if ( this.n現在のカーソル行 != (int) E戻り値.GAMESTART - 1 )
 			{
-				TJAPlayer3.Skin.soundカーソル移動音.t再生する();
+				TJAPlayer3.Skin.OFF.t再生する();
 				this.n現在のカーソル行--;
-				this.ct上移動用.t開始( 0, 100, 1, TJAPlayer3.Timer );
+				this.ct上移動用.t開始( 0, 100, 3, TJAPlayer3.Timer );
 				if( this.ct下移動用.b進行中 )
 				{
 					this.ct上移動用.n現在の値 = 100 - this.ct下移動用.n現在の値;

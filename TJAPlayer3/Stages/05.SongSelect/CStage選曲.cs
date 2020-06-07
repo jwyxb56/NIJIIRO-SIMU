@@ -352,8 +352,7 @@ namespace TJAPlayer3
                             }
                         #endregion
                         #region [ Shift-F1: CONFIG画面 ]
-                        if ( ( TJAPlayer3.Input管理.Keyboard.bキーが押されている( (int) SlimDX.DirectInput.Key.RightShift ) || TJAPlayer3.Input管理.Keyboard.bキーが押されている( (int) SlimDX.DirectInput.Key.LeftShift ) ) &&
-							TJAPlayer3.Input管理.Keyboard.bキーが押された( (int) SlimDX.DirectInput.Key.F1 ) )
+                        if ( TJAPlayer3.Input管理.Keyboard.bキーが押された( (int) SlimDX.DirectInput.Key.F1 ) )
 						{	// [SHIFT] + [F1] CONFIG
 							this.actPresound.tサウンド停止();
 							this.eフェードアウト完了時の戻り値 = E戻り値.コンフィグ呼び出し;	// #24525 2011.3.16 yyagi: [SHIFT]-[F1]でCONFIG呼び出し
@@ -373,7 +372,7 @@ namespace TJAPlayer3
 						#region [ F3 1PオートON/OFF ]
 						if ( TJAPlayer3.Input管理.Keyboard.bキーが押された( (int) SlimDX.DirectInput.Key.F3 ) )
 						{
-							TJAPlayer3.Skin.sound変更音.t再生する();
+							TJAPlayer3.Skin.オート変更音.t再生する();
                             C共通.bToggleBoolian( ref TJAPlayer3.ConfigIni.b太鼓パートAutoPlay );
 						}
                         #endregion
@@ -382,7 +381,7 @@ namespace TJAPlayer3
                         {
                             if (TJAPlayer3.ConfigIni.nPlayerCount > 1)
                             {
-                                TJAPlayer3.Skin.sound変更音.t再生する();
+                                TJAPlayer3.Skin.オート変更音.t再生する();
                                 C共通.bToggleBoolian(ref TJAPlayer3.ConfigIni.b太鼓パートAutoPlay2P);
                             }
                         }

@@ -179,26 +179,26 @@ namespace TJAPlayer3
                     Trace.TraceWarning($"ファイルが存在しません。: {this.strファイル名}");
 				    return;
 				}
-////				for( int i = 0; i < 2; i++ )		// #27790 2012.3.10 yyagi 2回読み出しを、1回読みだし＋1回メモリコピーに変更
-////				{
-//                    try
-//                    {
-//                        this.rSound[ 0 ] = CDTXMania.Sound管理.tサウンドを生成する( CSkin.Path( this.strファイル名 ) );
-//                    }
-//                    catch
-//                    {
-//                        this.rSound[ 0 ] = null;
-//                        throw;
-//                    }
-//                    if ( this.rSound[ 0 ] == null )	// #28243 2012.5.3 yyagi "this.rSound[ 0 ].bストリーム再生する"時もCloneするようにし、rSound[1]がnullにならないよう修正→rSound[1]の再生正常化
-//                    {
-//                        this.rSound[ 1 ] = null;
-//                    }
-//                    else
-//                    {
-//                        this.rSound[ 1 ] = ( CSound ) this.rSound[ 0 ].Clone();	// #27790 2012.3.10 yyagi add: to accelerate loading chip sounds
-//                        CDTXMania.Sound管理.tサウンドを登録する( this.rSound[ 1 ] );	// #28243 2012.5.3 yyagi add (登録漏れによりストリーム再生処理が発生していなかった)
-//                    }
+                ////				for( int i = 0; i < 2; i++ )		// #27790 2012.3.10 yyagi 2回読み出しを、1回読みだし＋1回メモリコピーに変更
+                ////				{
+                //                    try
+                //                    {
+                //                        this.rSound[ 0 ] = CDTXMania.Sound管理.tサウンドを生成する( CSkin.Path( this.strファイル名 ) );
+                //                    }
+                //                    catch
+                //                    {
+                //                        this.rSound[ 0 ] = null;
+                //                        throw;
+                //                    }
+                //                    if ( this.rSound[ 0 ] == null )	// #28243 2012.5.3 yyagi "this.rSound[ 0 ].bストリーム再生する"時もCloneするようにし、rSound[1]がnullにならないよう修正→rSound[1]の再生正常化
+                //                    {
+                //                        this.rSound[ 1 ] = null;
+                //                    }
+                //                    else
+                //                    {
+                //                        this.rSound[ 1 ] = ( CSound ) this.rSound[ 0 ].Clone();	// #27790 2012.3.10 yyagi add: to accelerate loading chip sounds
+                //                        CDTXMania.Sound管理.tサウンドを登録する( this.rSound[ 1 ] );	// #28243 2012.5.3 yyagi add (登録漏れによりストリーム再生処理が発生していなかった)
+                //                    }
 
                 ////				}
 
@@ -214,6 +214,7 @@ namespace TJAPlayer3
                         throw;
                     }
                 }
+
                 this.b読み込み成功 = true;
             }
             public void t再生する()
@@ -320,6 +321,9 @@ namespace TJAPlayer3
         public Cシステムサウンド sound取消音 = null;
         public Cシステムサウンド sound段位チャレンジ選択音;
         public Cシステムサウンド sound変更音 = null;
+        public Cシステムサウンド オート変更音 = null;
+        public Cシステムサウンド ON = null;
+        public Cシステムサウンド OFF = null;
         //add
         public Cシステムサウンド bgmリザルト = null;
         public Cシステムサウンド bgmリザルトループ = null;
@@ -614,6 +618,7 @@ namespace TJAPlayer3
             this.soundカーソル移動音 = new Cシステムサウンド(@"Sounds\Move.ogg", false, false, false, ESoundGroup.SoundEffect);
             this.sound決定音 = new Cシステムサウンド(@"Sounds\Decide.ogg", false, false, false, ESoundGroup.SoundEffect);
             this.sound変更音 = new Cシステムサウンド(@"Sounds\Change.ogg", false, false, false, ESoundGroup.SoundEffect);
+            this.オート変更音 = new Cシステムサウンド(@"Sounds\autohenkou.ogg", false, false, false, ESoundGroup.SoundEffect);
             this.sound取消音 = new Cシステムサウンド(@"Sounds\Cancel.ogg", false, false, true, ESoundGroup.SoundEffect);
             this.sound歓声音 = new Cシステムサウンド(@"Sounds\Audience.ogg", false, false, true, ESoundGroup.SoundEffect);
             this.soundSTAGEFAILED音 = new Cシステムサウンド(@"Sounds\Stage failed.ogg", false, true, true, ESoundGroup.Voice);
@@ -627,6 +632,8 @@ namespace TJAPlayer3
             this.bgmオプション画面 = new Cシステムサウンド(@"Sounds\Option BGM.ogg", true, true, false, ESoundGroup.SongPlayback);
             this.bgmコンフィグ画面 = new Cシステムサウンド(@"Sounds\Config BGM.ogg", true, true, false, ESoundGroup.SongPlayback);
             this.bgm選曲画面 = new Cシステムサウンド(@"Sounds\Select BGM.ogg", true, true, false, ESoundGroup.SongPreview);
+            this.ON = new Cシステムサウンド(@"Sounds\ON.ogg", false, false, false, ESoundGroup.SongPreview);
+            this.OFF = new Cシステムサウンド(@"Sounds\OFF.ogg", false, false, false, ESoundGroup.SongPreview);
 
             //this.soundRed               = new Cシステムサウンド( @"Sounds\dong.ogg",            false, false, true, ESoundType.SoundEffect );
             //this.soundBlue              = new Cシステムサウンド( @"Sounds\ka.ogg",              false, false, true, ESoundType.SoundEffect );
