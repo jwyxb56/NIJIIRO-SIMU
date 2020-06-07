@@ -965,6 +965,9 @@ namespace TJAPlayer3
 									#endregion
 							}
 						}
+
+						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Configuration");
+
 						//-----------------------------
 						#endregion
 						break;

@@ -10,10 +10,11 @@ using System.Reflection;
 
 namespace TJAPlayer3
 {
+	
 	internal class CStageタイトル : CStage
 	{
 		// コンストラクタ
-
+		
 		public CStageタイトル()
 		{
 			base.eステージID = CStage.Eステージ.タイトル;
@@ -88,7 +89,7 @@ namespace TJAPlayer3
 		}
 		public override int On進行描画()
 		{
-			if( !base.b活性化してない )
+			if ( !base.b活性化してない )
 			{
 				#region [ 初めての進行描画 ]
 				//---------------------
@@ -185,7 +186,46 @@ namespace TJAPlayer3
                 // 描画
 
                 if (TJAPlayer3.Tx.Title_Background != null )
-                    TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 ); 
+                    TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 );
+
+				
+				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.DownArrow))
+				{
+					a++;
+				}
+				else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.UpArrow))
+			    {
+					a--;
+				}
+				
+
+			    if (a == 0)
+				{
+					if (TJAPlayer3.Tx.Game != null)
+						TJAPlayer3.Tx.Game.t2D描画(TJAPlayer3.app.Device, 0, 0);
+					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Game");
+				}
+				else if (a == 1)
+				{
+					if (TJAPlayer3.Tx.Config != null)
+						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 0, 0);
+					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Config");
+				}
+				else if (a == 2)
+				{
+					if (TJAPlayer3.Tx.Exit != null)
+						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 0, 0);
+					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Exit");
+				}
+
+				if (a > 2)
+				{
+					a = 2;
+				}
+				else if (a < 0)
+				{
+					a = 0;
+				}
 
 				#region[ バージョン表示 ]
 				//string strVersion = "KTT:J:A:I:2017072200";
@@ -362,7 +402,7 @@ namespace TJAPlayer3
 				}
 			}
 		}
-
+		private int a = 0;
 		private CActFIFOWhite actFI;
 		private CActFIFOWhite actFIfromSetup;
 		private CActFIFOWhite actFO;

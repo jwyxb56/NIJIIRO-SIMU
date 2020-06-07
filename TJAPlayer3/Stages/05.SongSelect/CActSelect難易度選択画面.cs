@@ -278,6 +278,7 @@ namespace TJAPlayer3
                 this.b選曲後 = false;
                 base.b初めての進行描画 = false;
             }
+            TJAPlayer3.act文字コンソール.tPrint(4, (700 - 24), C文字コンソール.Eフォント種別.白, "Select difficulty");
             #endregion
 
             {
