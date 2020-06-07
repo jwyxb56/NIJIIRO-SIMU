@@ -324,6 +324,7 @@ namespace TJAPlayer3
         public Cシステムサウンド オート変更音 = null;
         public Cシステムサウンド ON = null;
         public Cシステムサウンド OFF = null;
+        public Cシステムサウンド Coin = null;
         //add
         public Cシステムサウンド bgmリザルト = null;
         public Cシステムサウンド bgmリザルトループ = null;
@@ -634,6 +635,7 @@ namespace TJAPlayer3
             this.bgm選曲画面 = new Cシステムサウンド(@"Sounds\Select BGM.ogg", true, true, false, ESoundGroup.SongPreview);
             this.ON = new Cシステムサウンド(@"Sounds\ON.ogg", false, false, false, ESoundGroup.SongPreview);
             this.OFF = new Cシステムサウンド(@"Sounds\OFF.ogg", false, false, false, ESoundGroup.SongPreview);
+            this.Coin = new Cシステムサウンド(@"Sounds\Coin.ogg", false, false, false, ESoundGroup.SongPreview);
 
             //this.soundRed               = new Cシステムサウンド( @"Sounds\dong.ogg",            false, false, true, ESoundType.SoundEffect );
             //this.soundBlue              = new Cシステムサウンド( @"Sounds\ka.ogg",              false, false, true, ESoundType.SoundEffect );

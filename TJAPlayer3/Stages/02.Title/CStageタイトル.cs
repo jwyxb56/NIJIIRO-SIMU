@@ -204,18 +204,26 @@ namespace TJAPlayer3
 					if (TJAPlayer3.Tx.Game != null)
 						TJAPlayer3.Tx.Game.t2D描画(TJAPlayer3.app.Device, 0, 0);
 					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Game");
+					if (TJAPlayer3.Tx.ConfigBar != null)
+						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 170, 570);
 				}
 				else if (a == 1)
 				{
 					if (TJAPlayer3.Tx.Config != null)
 						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 0, 0);
 					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Config");
+					if (TJAPlayer3.Tx.GameBar != null)
+						TJAPlayer3.Tx.GameBar.t2D描画(TJAPlayer3.app.Device, 170, 20);
+					if (TJAPlayer3.Tx.ExitBar != null)
+						TJAPlayer3.Tx.ExitBar.t2D描画(TJAPlayer3.app.Device, 170, 570);
 				}
 				else if (a == 2)
 				{
 					if (TJAPlayer3.Tx.Exit != null)
 						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 0, 0);
 					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Exit");
+					if (TJAPlayer3.Tx.ConfigBar != null)
+						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 170, 20);
 				}
 
 				if (a > 2)
@@ -227,9 +235,12 @@ namespace TJAPlayer3
 					a = 0;
 				}
 
+
+				
+
 				#region[ バージョン表示 ]
 				//string strVersion = "KTT:J:A:I:2017072200";
-				string strCreator = "https://github.com/AioiLight/TJAPlayer3";
+				string strCreator = "https://discord.gg/mkVYHjE";
                 AssemblyName asmApp = Assembly.GetExecutingAssembly().GetName();
 #if DEBUG
                 TJAPlayer3.act文字コンソール.tPrint(4, 44, C文字コンソール.Eフォント種別.白, "DEBUG BUILD");
@@ -237,7 +248,7 @@ namespace TJAPlayer3
                 TJAPlayer3.act文字コンソール.tPrint(4, 4, C文字コンソール.Eフォント種別.白, asmApp.Name + " Ver." + TJAPlayer3.VERSION + " (" + strCreator + ")" );
                 TJAPlayer3.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, "Skin:" + TJAPlayer3.Skin.Skin_Name + " Ver." + TJAPlayer3.Skin.Skin_Version + " (" + TJAPlayer3.Skin.Skin_Creator + ")");
                 //CDTXMania.act文字コンソール.tPrint(4, 24, C文字コンソール.Eフォント種別.白, strSubTitle);
-                TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "TJAPlayer3 forked TJAPlayer2 forPC(kairera0467)");
+                TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "TaikoOS forked Taiko Cats DooooN and TJAPlayer3");
 				TJAPlayer3.act文字コンソール.tPrint(4, (700 - 24), C文字コンソール.Eフォント種別.白, "TOS i7");
 				TJAPlayer3.act文字コンソール.tPrint(4, (680 - 24), C文字コンソール.Eフォント種別.白, "Title");
 				#endregion
@@ -290,12 +301,13 @@ namespace TJAPlayer3
                         System.Diagnostics.Process.Start(strCreator);
                 }
 
-                //CDTXMania.act文字コンソール.tPrint(0, 80, C文字コンソール.Eフォント種別.白, point.X.ToString());
-                //CDTXMania.act文字コンソール.tPrint(0, 100, C文字コンソール.Eフォント種別.白, point.Y.ToString());
-                //CDTXMania.act文字コンソール.tPrint(0, 120, C文字コンソール.Eフォント種別.白, scaling.ToString());
+				//CDTXMania.act文字コンソール.tPrint(0, 80, C文字コンソール.Eフォント種別.白, point.X.ToString());
+				//CDTXMania.act文字コンソール.tPrint(0, 100, C文字コンソール.Eフォント種別.白, point.Y.ToString());
+				//CDTXMania.act文字コンソール.tPrint(0, 120, C文字コンソール.Eフォント種別.白, scaling.ToString());
 
+				
 
-                CStage.Eフェーズ eフェーズid = base.eフェーズID;
+				CStage.Eフェーズ eフェーズid = base.eフェーズID;
 				switch( eフェーズid )
 				{
 					case CStage.Eフェーズ.共通_フェードイン:
@@ -420,7 +432,7 @@ namespace TJAPlayer3
 		{
 			if ( this.n現在のカーソル行 != (int) E戻り値.EXIT - 1 )
 			{
-				TJAPlayer3.Skin.ON.t再生する();
+				TJAPlayer3.Skin.sound変更音.t再生する();
 				this.n現在のカーソル行++;
 				this.ct下移動用.t開始( 0, 100, 3, TJAPlayer3.Timer );
 				if( this.ct上移動用.b進行中 )
@@ -434,7 +446,7 @@ namespace TJAPlayer3
 		{
 			if ( this.n現在のカーソル行 != (int) E戻り値.GAMESTART - 1 )
 			{
-				TJAPlayer3.Skin.OFF.t再生する();
+				TJAPlayer3.Skin.sound変更音.t再生する();
 				this.n現在のカーソル行--;
 				this.ct上移動用.t開始( 0, 100, 3, TJAPlayer3.Timer );
 				if( this.ct下移動用.b進行中 )

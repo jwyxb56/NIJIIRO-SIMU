@@ -68,6 +68,7 @@ namespace TJAPlayer3
         public void LoadTexture()
         {
             #region 共通
+            Coin = TxC(@"Coin.png");
             BlackOut = TxC(@"BlackOut.png");
             Tile_Black = TxC(@"Tile_Black.png");
             Tile_White = TxC(@"Tile_White.png");
@@ -99,6 +100,9 @@ namespace TJAPlayer3
             Game = TxC(TITLE + @"Box_open1.png");
             Config = TxC(TITLE + @"Box_open3.png");
             Exit = TxC(TITLE + @"Box_open4.png");
+            GameBar = TxC(TITLE + @"Box1.png");
+            ConfigBar = TxC(TITLE + @"Box3.png");
+            ExitBar = TxC(TITLE + @"Box4.png");
             #endregion
 
             #region 2_コンフィグ画面
@@ -1333,6 +1337,7 @@ namespace TJAPlayer3
         public CTexture Tile_Black,
             Tile_White,
             Menu_Title,
+            Coin,
             Menu_Highlight,
             Enum_Song,
             BlackOut,
@@ -1348,7 +1353,10 @@ namespace TJAPlayer3
             TOSi7,
             Game,
             Config,
-            Exit;
+            Exit,
+            GameBar,
+            ConfigBar,
+            ExitBar;
         #endregion
 
         #region 2_コンフィグ画面

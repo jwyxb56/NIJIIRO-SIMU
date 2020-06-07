@@ -16,6 +16,7 @@ using SampleFramework;
 using System.Reflection;
 using System.Web.UI.WebControls;
 using Microsoft.VisualBasic;
+using TJAPlayer3.Stages;
 
 namespace TJAPlayer3
 {
@@ -180,6 +181,11 @@ namespace TJAPlayer3
 			get; 
 			private set;
 		}
+		public static Coin CoinSystem
+		{
+			get;
+			private set;
+		}
 		public static CSongs管理 Songs管理 
 		{
 			get;
@@ -205,7 +211,7 @@ namespace TJAPlayer3
 			get;
 			private set;
 		}
-
+		
 		public static CSound管理 Sound管理
 		{
 			get;
