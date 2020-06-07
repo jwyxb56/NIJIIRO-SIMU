@@ -189,11 +189,11 @@ namespace TJAPlayer3
                     TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 );
 
 				
-				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.DownArrow))
+				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.DownArrow) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RBlue))
 				{
 					a++;
 				}
-				else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.UpArrow))
+				else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.UpArrow) || TJAPlayer3.Pad.b押されたDGB(Eパッド.LBlue))
 			    {
 					a--;
 				}
