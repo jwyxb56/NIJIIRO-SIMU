@@ -188,7 +188,16 @@ namespace TJAPlayer3
                 if (TJAPlayer3.Tx.Title_Background != null )
                     TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 );
 
-				
+				if (TJAPlayer3.Tx.Start != null)
+					TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160 ,350);
+
+				if (TJAPlayer3.Tx.Config != null)
+					TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
+
+				if (TJAPlayer3.Tx.Exit != null)
+					TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 900, 350);
+
+
 				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.DownArrow) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RBlue))
 				{
 					a++;
@@ -199,32 +208,7 @@ namespace TJAPlayer3
 				}
 				
 
-			    if (a == 0)
-				{
-					if (TJAPlayer3.Tx.Game != null)
-						TJAPlayer3.Tx.Game.t2D描画(TJAPlayer3.app.Device, 0, 0);
-					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Game");
-					if (TJAPlayer3.Tx.ConfigBar != null)
-						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 170, 570);
-				}
-				else if (a == 1)
-				{
-					if (TJAPlayer3.Tx.Config != null)
-						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 0, 0);
-					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Config");
-					if (TJAPlayer3.Tx.GameBar != null)
-						TJAPlayer3.Tx.GameBar.t2D描画(TJAPlayer3.app.Device, 170, 20);
-					if (TJAPlayer3.Tx.ExitBar != null)
-						TJAPlayer3.Tx.ExitBar.t2D描画(TJAPlayer3.app.Device, 170, 570);
-				}
-				else if (a == 2)
-				{
-					if (TJAPlayer3.Tx.Exit != null)
-						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 0, 0);
-					TJAPlayer3.act文字コンソール.tPrint(4, (660 - 24), C文字コンソール.Eフォント種別.白, "Exit");
-					if (TJAPlayer3.Tx.ConfigBar != null)
-						TJAPlayer3.Tx.ConfigBar.t2D描画(TJAPlayer3.app.Device, 170, 25);
-				}
+			    
 
 				if (a > 2)
 				{
@@ -235,8 +219,8 @@ namespace TJAPlayer3
 					a = 0;
 				}
 
+			
 
-				
 
 				#region[ バージョン表示 ]
 				//string strVersion = "KTT:J:A:I:2017072200";

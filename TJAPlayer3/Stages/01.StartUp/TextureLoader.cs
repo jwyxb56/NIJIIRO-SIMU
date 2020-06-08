@@ -98,11 +98,12 @@ namespace TJAPlayer3
             Title_Menu = TxC(TITLE + @"Menu.png");
             TOSi7 = TxC(TITLE + @"TOS7.png");
             Game = TxC(TITLE + @"Box_open1.png");
-            Config = TxC(TITLE + @"Box_open3.png");
-            Exit = TxC(TITLE + @"Box_open4.png");
             GameBar = TxC(TITLE + @"Box1.png");
             ConfigBar = TxC(TITLE + @"Box3.png");
-            ExitBar = TxC(TITLE + @"Box4.png");
+            ExitBar = TxC(TITLE + @"Box4.png"); 
+            Start = TxC(TITLE + @"Start.png");
+            Config = TxC(TITLE + @"Config.png");
+            Exit = TxC(TITLE + @"Exit.png");
             #endregion
 
             #region 2_コンフィグ画面
@@ -1352,6 +1353,7 @@ namespace TJAPlayer3
             Title_Menu,
             TOSi7,
             Game,
+            Start,
             Config,
             Exit,
             GameBar,
