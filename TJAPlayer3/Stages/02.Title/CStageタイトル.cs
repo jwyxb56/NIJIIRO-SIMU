@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Drawing;
@@ -10,7 +8,7 @@ using System.Reflection;
 
 namespace TJAPlayer3
 {
-	
+
 	internal class CStageタイトル : CStage
 	{
 		// コンストラクタ
@@ -71,6 +69,9 @@ namespace TJAPlayer3
 		}
 		public override void OnManagedリソースの作成()
 		{
+			ctCounter = new CCounter();
+
+			
 			//if( !base.b活性化してない )
 			//{
 			//	this.tx背景 = CDTXMania.tテクスチャの生成( CSkin.Path(@"Graphics\2_background.png"));
@@ -91,9 +92,10 @@ namespace TJAPlayer3
 		{
 			if ( !base.b活性化してない )
 			{
+				ctCounter.t進行();
 				#region [ 初めての進行描画 ]
 				//---------------------
-				if( base.b初めての進行描画 )
+				if ( base.b初めての進行描画 )
 				{
 					if( TJAPlayer3.r直前のステージ == TJAPlayer3.stage起動 )
 					{
@@ -162,58 +164,81 @@ namespace TJAPlayer3
                     if (TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.LT) || (TJAPlayer3.Pad.b押されたDGB(Eパッド.RBlue)))
                         this.tカーソルを下へ移動する();
 
-                    if ((TJAPlayer3.Pad.b押されたDGB(Eパッド.Decide) || (TJAPlayer3.Pad.b押されたDGB(Eパッド.LRed) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RRed)) || TJAPlayer3.Pad.b押されたDGB(Eパッド.CY) || TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.RD)) || (TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.LC) || (TJAPlayer3.ConfigIni.bEnterがキー割り当てのどこにも使用されていない && TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.Return))))
-                    {
-						if ( ( this.n現在のカーソル行 == (int) E戻り値.GAMESTART - 1 ) && TJAPlayer3.Skin.soundゲーム開始音.b読み込み成功 )
+                   if (NowCoinCount >= 1)
+					{
+						if ((TJAPlayer3.Pad.b押されたDGB(Eパッド.Decide) || (TJAPlayer3.Pad.b押されたDGB(Eパッド.LRed) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RRed)) || TJAPlayer3.Pad.b押されたDGB(Eパッド.CY) || TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.RD)) || (TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.LC) || (TJAPlayer3.ConfigIni.bEnterがキー割り当てのどこにも使用されていない && TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.Return))))
 						{
-							TJAPlayer3.Skin.soundゲーム開始音.t再生する();
+							if ((this.n現在のカーソル行 == (int)E戻り値.GAMESTART - 1) && TJAPlayer3.Skin.soundゲーム開始音.b読み込み成功)
+							{
+								TJAPlayer3.Skin.soundゲーム開始音.t再生する();
+							}
+							else
+							{
+								TJAPlayer3.Skin.sound決定音.t再生する();
+							}
+							if (this.n現在のカーソル行 == (int)E戻り値.EXIT - 1)
+							{
+								return (int)E戻り値.EXIT;
+							}
+							this.actFO.tフェードアウト開始();
+							base.eフェーズID = CStage.Eフェーズ.共通_フェードアウト;
 						}
-						else
-						{
-							TJAPlayer3.Skin.sound決定音.t再生する();
-						}
-						if( this.n現在のカーソル行 == (int)E戻り値.EXIT - 1 )
-						{
-							return (int)E戻り値.EXIT;
-						}
-						this.actFO.tフェードアウト開始();
-						base.eフェーズID = CStage.Eフェーズ.共通_フェードアウト;
 					}
 //					if ( CDTXMania.Input管理.Keyboard.bキーが押された( (int) Key.Space ) )
 //						Trace.TraceInformation( "DTXMania Title: SPACE key registered. " + CDTXMania.ct.nシステム時刻 );
 				}
 
-                // 描画
+				// 描画
 
-                if (TJAPlayer3.Tx.Title_Background != null )
+				if (TJAPlayer3.Tx.Title_Background != null )
                     TJAPlayer3.Tx.Title_Background.t2D描画( TJAPlayer3.app.Device, 0, 0 );
+				ctCounter.t開始(0, -370, 1, TJAPlayer3.Timer);
 
-				if (TJAPlayer3.Tx.Start != null)
-					TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160 ,350);
-
-				if (TJAPlayer3.Tx.Config != null)
-					TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
-
-				if (TJAPlayer3.Tx.Exit != null)
-					TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 900, 350);
 
 				if (a == 0)
 				{
 				    TJAPlayer3.Tx.Start.vc拡大縮小倍率 = new SlimDX.Vector3(1.2f, 1.2f, 1.0f);
 					TJAPlayer3.Tx.Config.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
 					TJAPlayer3.Tx.Exit.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
+
+					if (TJAPlayer3.Tx.Start != null)
+						TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160 + ctCounter.n現在の値, 500);
+
+					if (TJAPlayer3.Tx.Config != null)
+						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
+
+					if (TJAPlayer3.Tx.Exit != null)
+						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 900, 350);
 				}
 				else if (a == 1)
 				{
 					TJAPlayer3.Tx.Start.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
 					TJAPlayer3.Tx.Config.vc拡大縮小倍率 = new SlimDX.Vector3(1.2f, 1.2f, 1.0f);
 					TJAPlayer3.Tx.Exit.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
+
+					if (TJAPlayer3.Tx.Start != null)
+						TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160, 350);
+
+					if (TJAPlayer3.Tx.Config != null)
+						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
+
+					if (TJAPlayer3.Tx.Exit != null)
+						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 900, 350);
 				}
 				else if (a == 2)
 				{
 					TJAPlayer3.Tx.Start.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
 					TJAPlayer3.Tx.Exit.vc拡大縮小倍率 = new SlimDX.Vector3(1.2f, 1.2f, 1.0f);
 					TJAPlayer3.Tx.Config.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
+
+					if (TJAPlayer3.Tx.Start != null)
+						TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160, 350);
+
+					if (TJAPlayer3.Tx.Config != null)
+						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
+
+					if (TJAPlayer3.Tx.Exit != null)
+						TJAPlayer3.Tx.Exit.t2D描画(TJAPlayer3.app.Device, 900, 350);
 				}
 
 				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.DownArrow) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RBlue))
@@ -224,9 +249,8 @@ namespace TJAPlayer3
 			    {
 					a--;
 				}
-				
 
-			    
+
 
 				if (a > 2)
 				{
@@ -237,8 +261,50 @@ namespace TJAPlayer3
 					a = 0;
 				}
 
-			
+				// コインシステム
 
+				// PageUpキーで1コインずつ入る
+				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.PageUp)) 
+				{
+					TJAPlayer3.Skin.Coin.t再生する();
+					NowCoinCount++;
+				}
+				// PageDownキーで1コインずつ減る
+				else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.PageDown)) 
+				{
+					NowCoinCount--;
+				}
+				// 選曲に行くと1コイン減る
+				else if ((TJAPlayer3.Pad.b押されたDGB(Eパッド.Decide) || (TJAPlayer3.Pad.b押されたDGB(Eパッド.LRed) || TJAPlayer3.Pad.b押されたDGB(Eパッド.RRed)) || TJAPlayer3.Pad.b押されたDGB(Eパッド.CY) || TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.RD)) || (TJAPlayer3.Pad.b押された(E楽器パート.DRUMS, Eパッド.LC) || (TJAPlayer3.ConfigIni.bEnterがキー割り当てのどこにも使用されていない && TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.Return))))
+				{
+					NowCoinCount--;
+				}
+				// Endキーでコインをパーにできる
+				else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.End))
+				{
+					NowCoinCount = 0;
+				}
+
+				// 0未満にならないようにする
+				if (NowCoinCount < 0)
+				{
+					NowCoinCount = 0;
+				}
+
+				
+
+				this.pfCoin = new CPrivateFastFont(new FontFamily(TJAPlayer3.ConfigIni.FontName), 16, FontStyle.Bold);
+
+				using (var bmpStageText = pfCoin.DrawPrivateFont(NowCoinCount.ToString(), Color.Blue, Color.Red))     //20
+				{
+					this.txCoin = TJAPlayer3.tテクスチャの生成(bmpStageText, false);
+				}
+
+
+				txCoin.vc拡大縮小倍率.Y = 0.97f;
+				txCoin.t2D描画(TJAPlayer3.app.Device, 680, 680);
+
+				
 
 				#region[ バージョン表示 ]
 				//string strVersion = "KTT:J:A:I:2017072200";
@@ -360,7 +426,7 @@ namespace TJAPlayer3
 			EXIT
 		}
 
-
+		
 		// その他
 
 		#region [ private ]
@@ -429,7 +495,15 @@ namespace TJAPlayer3
 		private const int MENU_X = 506;
 		private const int MENU_Y = 513;
 		private int n現在のカーソル行;
-	
+		private CCounter ctCounter;
+
+		private CPrivateFastFont pfCoin; 
+		private CTexture txCoin; 
+		private int NowCoinCount;
+
+		public CPrivateFont pfEntry;
+		public CTexture TxEntry;
+
 		private void tカーソルを下へ移動する()
 		{
 			if ( this.n現在のカーソル行 != (int) E戻り値.EXIT - 1 )
