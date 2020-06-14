@@ -89,9 +89,9 @@ namespace TJAPlayer3
 			//}
 		}
 		public override int On進行描画()
-		{
+		{			
 			if ( !base.b活性化してない )
-			{
+			{				
 				ctCounter.t進行();
 				#region [ 初めての進行描画 ]
 				//---------------------
@@ -202,7 +202,7 @@ namespace TJAPlayer3
 					TJAPlayer3.Tx.Exit.vc拡大縮小倍率 = new SlimDX.Vector3(1.0f, 1.0f, 1.0f);
 
 					if (TJAPlayer3.Tx.Start != null)
-						TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160 + ctCounter.n現在の値, 500);
+						TJAPlayer3.Tx.Start.t2D描画(TJAPlayer3.app.Device, 160 , 350);
 
 					if (TJAPlayer3.Tx.Config != null)
 						TJAPlayer3.Tx.Config.t2D描画(TJAPlayer3.app.Device, 530, 350);
@@ -291,17 +291,20 @@ namespace TJAPlayer3
 					NowCoinCount = 0;
 				}
 
-				
+				if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.PageUp))
+				{
+					TJAPlayer3.Skin.Coin.t再生する();
+				}
 
-				this.pfCoin = new CPrivateFastFont(new FontFamily(TJAPlayer3.ConfigIni.FontName), 16, FontStyle.Bold);
+					this.pfCoin = new CPrivateFastFont(new FontFamily(TJAPlayer3.ConfigIni.FontName), 16, FontStyle.Bold);
 
 				using (var bmpStageText = pfCoin.DrawPrivateFont(NowCoinCount.ToString(), Color.Blue, Color.Red))     //20
 				{
 					this.txCoin = TJAPlayer3.tテクスチャの生成(bmpStageText, false);
 				}
 
-
-				txCoin.vc拡大縮小倍率.Y = 0.97f;
+				txCoin.vc拡大縮小倍率.X = 1.00f;
+				txCoin.vc拡大縮小倍率.Y = 1.00f;
 				txCoin.t2D描画(TJAPlayer3.app.Device, 680, 680);
 
 				

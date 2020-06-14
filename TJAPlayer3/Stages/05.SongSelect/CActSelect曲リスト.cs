@@ -1285,7 +1285,7 @@ namespace TJAPlayer3
                                 }
 
                                 TJAPlayer3.Tx.SongSelect_Bar_Center_BOX[this.nStBOXSS(this.r現在選択中の曲.strジャンル)]?.t2D描画(TJAPlayer3.app.Device, 628 - Bar_Center_Animation.n現在の値, TJAPlayer3.Skin.SongSelect_Overall_Y, new Rectangle(0, 0, Bar_Center_Animation.n現在の値 + 16, 472));
-                                TJAPlayer3.Tx.SongSelect_Bar_Center_BOX[this.nStBOXSS(this.r現在選択中の曲.strジャンル)]?.t2D描画(TJAPlayer3.app.Device, 644, TJAPlayer3.Skin.SongSelect_Overall_Y, new Rectangle(374 - Bar_Center_Animation.n現在の値 + 2, 0, 0 + (Bar_Center_Animation.n現在の値) + 15, 472));
+                                TJAPlayer3.Tx.SongSelect_Bar_Center_BOX[this.nStBOXSS(this.r現在選択中の曲.strジャンル)]?.t2D描画(TJAPlayer3.app.Device, 644, TJAPlayer3.Skin.SongSelect_Overall_Y, new Rectangle(374 - Bar_Center_Animation.n現在の値 + 2, 0, 0 + (Bar_Center_Animation.n現在の値) + 15,  472));
 
                                 TJAPlayer3.Tx.SongSelect_Bar_Center_Header[this.nStBOXSS(this.r現在選択中の曲.strジャンル)]?.t2D拡大率考慮下基準描画(TJAPlayer3.app.Device, 448, 48 + 余白Y);//448
 

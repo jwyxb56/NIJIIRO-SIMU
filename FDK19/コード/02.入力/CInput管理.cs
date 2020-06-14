@@ -17,7 +17,7 @@ namespace FDK
 			get;
 			private set;
 		}
-		public IInputDevice Keyboard
+        public IInputDevice Keyboard
 		{
 			get
 			{
