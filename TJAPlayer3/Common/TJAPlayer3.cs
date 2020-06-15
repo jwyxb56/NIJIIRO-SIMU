@@ -1088,9 +1088,11 @@ namespace TJAPlayer3
 
 						TJAPlayer3.act文字コンソール.tPrint(4, (720 - 24), C文字コンソール.Eフォント種別.白, "Song selection");
 
-						//-----------------------------
-						#endregion
-						break;
+					
+
+							//-----------------------------
+							#endregion
+							break;
 
 					case CStage.Eステージ.曲読み込み:
 						#region [ *** ]

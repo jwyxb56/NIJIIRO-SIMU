@@ -404,7 +404,7 @@ namespace TJAPlayer3
                                 }
                                 else if (TJAPlayer3.Input管理.Keyboard.bキーが押された((int)SlimDX.DirectInput.Key.F3))
                                 {
-                                    TJAPlayer3.Skin.sound変更音.t再生する();
+                                    TJAPlayer3.Skin.オート変更音.t再生する();
                                     C共通.bToggleBoolian(ref TJAPlayer3.ConfigIni.b太鼓パートAutoPlay);
                                 }
                             }

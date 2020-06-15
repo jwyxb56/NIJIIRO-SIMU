@@ -240,6 +240,11 @@ namespace FDK
             }
         }
 
+        public double t2D描画(Device device, double v)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// <para>画像ファイルからテクスチャを生成する。</para>
         /// <para>利用可能な画像形式は、BMP, JPG, PNG, TGA, DDS, PPM, DIB, HDR, PFM のいずれか。</para>
@@ -468,7 +473,7 @@ namespace FDK
         /// <param name="device">Direct3D9 デバイス。</param>
         /// <param name="x">描画位置（テクスチャの左上位置の X 座標[dot]）。</param>
         /// <param name="y">描画位置（テクスチャの左上位置の Y 座標[dot]）。</param>
-        public void t2D描画(Device device, int x, int y)
+        public void t2D描画(Device device, string v, int x, int y)
         {
             this.t2D描画(device, x, y, 1f, this.rc全画像);
         }

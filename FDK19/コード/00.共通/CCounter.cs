@@ -266,6 +266,16 @@ namespace FDK
 			}
 		}
 
+		public void t開始(float v1, float v2, float v3, CTimer timer)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void t開始(int v1, float v2, int v3, CTimer timer)
+		{
+			throw new NotImplementedException();
+		}
+
 		/// <summary>
 		/// カウントを停止する。
 		/// これ以降に t進行() や t進行Loop() を呼び出しても何も処理されない。
