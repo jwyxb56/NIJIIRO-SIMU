@@ -1,4 +1,4 @@
-# TaikoOS i7
+# NIJIIRO SIMU
 DTXManiaをいじってtja再生プログラムにしちゃった[TJAPlayer2fPC](https://github.com/kairera0467/TJAP2fPC)をForkして本家風に改造したアレをさらに改造していくアレをさらに改造しているアレ
 
 この改造者[@aioilight_2nd](https://twitter.com/aioilight_2nd)はプログラミングが大変苦手なので、スパゲッティコードと化していると思います...すみません
